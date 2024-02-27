@@ -3,6 +3,7 @@ import CoursesCategory from "./components/CoursesCategory";
 import { Route, Routes } from "react-router-dom";
 import Courses from "./components/Courses";
 import CourseDetails from "./components/CourseDetails";
+import Home from "./components/Home";
 const App = () => {
   const courses = [
     {
@@ -529,6 +530,7 @@ const App = () => {
   return (
     <div>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/courses" element={<CoursesCategory />} />
         <Route
           path="/courses/category/:courseCategory"
