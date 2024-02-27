@@ -20,13 +20,13 @@ const CourseDetails = ({ courses }) => {
 
       <div className="px-4 py-4 lg:border lg:pb-12 lg:pt-6">
         <p>{course.overview}</p>
-        <h2 className="text-xl font-medium mt-4 mb-2">Curriculum</h2>
-        <ul className="list-disc ml-5">
+        <h2 className="text-xl font-medium mt-6 mb-2">Curriculum</h2>
+        <ul className="list-disc ml-4">
           {course.curriculum.map((curriculumItem, index) => (
             <li key={index}>{curriculumItem}</li>
           ))}
         </ul>
-        <h2 className="text-xl font-medium mt-4 mb-2">Faculty Profile</h2>
+        <h2 className="text-xl font-medium mt-7 mb-5">Faculty Profile</h2>
         <div className="flex flex-wrap  gap-x-4 gap-y-4">
           {course.facultyProfiles.map((facultyProfile, index) => (
             <div
